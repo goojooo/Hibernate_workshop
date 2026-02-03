@@ -20,6 +20,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
  
  <!--mapping file -->
- <mapping resource="pojos/Product.hbm.xml"/>
+ <mapping class="pojos.Artist"/>
  </session-factory>
 </hibernate-configuration>
