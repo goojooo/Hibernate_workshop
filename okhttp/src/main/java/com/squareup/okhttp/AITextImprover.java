@@ -21,7 +21,7 @@ public class AITextImprover {
 		System.out.println("Enter your text : ");
 		String userText = sc.nextLine(); // input-user
 
-		String apiKey = "AIzaSyA3P_vqZR25QmXo95dRWhCEayhJhaTv1F8";
+		String apiKey = "";
 
 		OkHttpClient client = new OkHttpClient();
 
