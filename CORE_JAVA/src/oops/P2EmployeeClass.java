@@ -4,7 +4,7 @@ class Employee
 {
 	private int id;
 	private String name;
-	private static double sal;
+	private double sal;
 	
 	Employee()
 	{
@@ -18,7 +18,7 @@ class Employee
 		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
 	}
 	
-	static double calculateAnnualSalary()
+	double calculateAnnualSalary()
 	{
 		return sal * 12;
 	}
@@ -32,7 +32,7 @@ public class P2EmployeeClass {
 		
 		Employee e = new Employee();
 		System.out.println(e);
-		System.out.println(Employee.calculateAnnualSalary());
+		System.out.println(e.calculateAnnualSalary());
 	}
 
 }

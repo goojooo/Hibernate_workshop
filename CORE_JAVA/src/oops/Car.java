@@ -3,9 +3,9 @@ package oops;
 import java.util.Scanner;
 
 public class Car {
-	private static String brand;
-	private static String model;
-	private static int price;
+	private String brand;
+	private String model;
+	private int price;
 	
 	public void setbrand(String brand)
 	{
@@ -32,12 +32,12 @@ public class Car {
 		return price;
 	}
 
-	static String displayCarDetails()
+	 void displayCarDetails()
 	{
 		System.out.println("Brand : " + brand);
 		System.out.println("Model : " + model);
 		System.out.println("Price : " + price);
-		return brand + model + price;
+//		return brand + model + price;
 	}
 	public static void main(String[] args) {
 	
@@ -48,8 +48,9 @@ public class Car {
 		c.setModel(sc.nextLine());
 		c.setPrice(sc.nextInt());
 		
-		displayCarDetails();
+		c.displayCarDetails();
 
+		sc.close();
 	}
 
 }
