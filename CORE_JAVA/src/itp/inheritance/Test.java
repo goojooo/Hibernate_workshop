@@ -10,11 +10,11 @@ class A {
         y = 20;
     }
 
-    public A(int x, int y) {
-        System.out.println("In para of A class");
-        this.x = x;
-        this.y = y;
-    }
+//    public A(int x, int y) {
+//        System.out.println("In para of A class");
+//        this.x = x;
+//        this.y = y;
+//    }
 
     @Override
     public String toString() {
@@ -46,14 +46,14 @@ public class Test {
 
 //        Test t = new Test();
 
-//        A refA = new A();
-//        System.out.println(refA);
+        A refA = new A();
+        System.out.println(refA);
 
-        System.out.println("------------------------------+");
-
-        B refB = new B();
-        System.out.println(refB);
-        
-        System.out.println("------------------------------+");
+//        System.out.println("------------------------------+");
+//
+//        B refB = new B();
+//        System.out.println(refB);
+//        
+//        System.out.println("------------------------------+");
     }
 }
